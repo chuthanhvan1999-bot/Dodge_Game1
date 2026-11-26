@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodge Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <div class="header">
+            <div>
+                <h1>DODGE GAME</h1>
+                <p>Tránh vật cản - sống càng lâu càng tốt!</p>
+            </div>
+
+            <div class="best-score">
+                <span>BEST SCORE</span>
+                <strong id="bestScore">0</strong>
+            </div>
+        </div>
+
+        
+<div class="game-info">
+
+    <div class="info-box">
+        <span>ĐIỂM</span>
+        <strong id="score">0</strong>
+    </div>
+
+    <div class="info-box">
+        <span>LEVEL</span>
+        <strong id="level">1</strong>
+    </div>
+
+    <div class="info-box">
+        <span>MẠNG</span>
+        <strong id="lives">3</strong>
+    </div>
+
+    <div class="info-box">
+        <span>DASH</span>
+        <strong id="dash">READY</strong>
+    </div>
+
+    <div class="info-box">
+        <span>THỜI GIAN</span>
+        <strong id="time">0s</strong>
+    </div>
+
+</div>
+
+
+        <div class="game-area">
+
+            <canvas id="gameCanvas" width="600" height="700"></canvas>
+
+            <div class="overlay" id="overlay">
+
+                <div class="overlay-content">
+                    <h2 id="overlayTitle">DODGE GAME</h2>
+
+                    <p id="overlayText">
+                        Di chuyển và né các vật cản.
+                        Đừng để chúng chạm vào bạn!
+                    </p>
+
+                    <div class="difficulty">
+                        <label for="difficulty">Độ khó:</label>
+
+                        <select id="difficulty">
+                            <option value="easy">Dễ</option>
+                            <option value="normal" selected>Bình thường</option>
+                            <option value="hard">Khó</option>
+                        </select>
+                    </div>
+
+                    <button id="startBtn">BẮT ĐẦU CHƠI</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="controls">
+    <p>⬅ ➡ hoặc A / D: Di chuyển | SPACE: Dash</p>
+    <p>Dash giúp né nhanh, nhưng có thời gian hồi chiêu!</p>
+</div>
+
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
